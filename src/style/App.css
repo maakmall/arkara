@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --dark-rgb: 16, 24, 32;
+  --dark-hex: #101820;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-dark {
+  background-color: var(--dark-hex) !important;
+}
+
+.btn {
+  transition: 0.5s;
+}
+
+.btn:hover {
+  opacity: 0.75;
+}
+
+/* Scroll */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(var(--dark-rgb), 0.75);
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: white; 
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(var(--dark-rgb), 0.75); 
+}
+
+/* Navbar */
+
+.navbar {
+  transition: 0.4s;
+}
+
+.nav-link {
+  transition: 0.5s;
+}
+
+.nav-hidden {
+  transform: translate3d(0, -100%, 0);
+  -webkit-transform: translate3d(0, -100%, 0);
+  -o-transform: translate3d(0, -100%, 0);
+  -ms-transform: translate3d(0, -100%, 0);
+  -moz-transform: translate3d(0, -100%, 0);
+}
+
+/* Hero */
+
+.hero {
+  background: url(../image/hero.jpg) center;
+  background-size: cover;
+}
+
+.hero .container {
+  z-index: 1;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  background-color: rgba(var(--dark-rgb), 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero h1,
+.hero p {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* About Us */
+
+#about {
+  padding-bottom: 100px;
+}
+
+.about-image {
+  transition: 0.5s;
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+}
+
+/* Our Menu */
+
+.menu {
+  border-radius: 60px;
+  transform: translateY(-55px);
+}
+
+.card {
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Waiting */
+
+.waiting {
+  height: 40vh;
+  background: url(../image/waiting.jpeg) center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.waiting:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(var(--dark-rgb), 0.75);
+}
+
+.waiting h3 {
+  z-index: 1;
+}
+
+/* Footer */
+.bi:hover {
+  opacity: 0.75;
+}
+
+.input-group input {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.input-group button {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
